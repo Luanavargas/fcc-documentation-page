@@ -12,9 +12,17 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 10px;
+}
+ 
+li {
+    margin-bottom: 10px;
+}
 
 .header {
     z-index: 2;
+    overflow: scroll;
 }
 
 .container {
@@ -33,6 +41,7 @@ a {
     width: 90%;
     font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .flex {
@@ -72,7 +81,6 @@ a {
 .nav-bar {
     padding-right: 20px;
     border-right: 2px solid #747272;
-    height: 100%;
     background-color: #ffffffb0;
 }
 
@@ -104,7 +112,7 @@ a {
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
     color: #0f0f0f;
-    line-height: 30px;
+    line-height: 20px;
 }
 
 .oswald-font {
@@ -173,4 +181,14 @@ a {
 
 .pr-10 {
     padding-right: 10px;
+}
+
+@media (max-width:1000px) {
+    .box-code {
+        width: 100%;
+    }
+
+    .container {
+        max-width: 100%;
+    }
 }
