@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
 </head>
 
 <body class="margin-0 bg-color-light-gray">
@@ -138,27 +139,33 @@
                 <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world"
                     JavaScript code:</p>
                 <div class="box-code">
-                    <div class="flex flex-row px-20">
-                        <p class="color-1">function</p>
-                        <p class="color-2 px-5">greetMe</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3 px-5">yourName</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-2">alert</p>
-                        <p class="color-white px-5">(</p>
-                        <p class="color-4">"hello"</p>
-                        <p class="color-white px-10">+</p>
-                        <p class="color-3 px-5">yourName</p>
-                        <p class="color-white">);</p>
-                        <p class="color-white px-10">}</p>
+                    <div class="px-20">
+                        <div><span class="color-1">function</span>
+                            <span class="color-2">greetMe</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">yourName</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white ">{</span>
+                        </div>
+                        <div>
+                            <span class="color-2">alert</span>
+                            <span class="color-white">(</span>
+                            <span class="color-4">"hello"</span>
+                            <span class="color-white ">+</span>
+                            <span class="color-3">yourName</span>
+                            <span class="color-white">);</span>
+                        </div>
+                        <div>
+                            <span class="color-white">}</span>
+                        </div>
+                        <div>
+                            <span class="color-2 ">greetMe</span>
+                            <span class="color-white">(</span>
+                            <span class="color-4 ">"World"</span>
+                            <span class="color-white">);</span>
+                        </div>
                     </div>
-                    <div class="flex flex-row px-20">
-                        <p class="color-2 ">greetMe</p>
-                        <p class="color-white px-5">(</p>
-                        <p class="color-4 ">"World"</p>
-                        <p class="color-white px-5">);</p>
-                    </div>
+
                 </div>
                 <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
             </div>
@@ -192,11 +199,11 @@
                 <p>With the keyword var. For example,</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-1">var</p>
-                        <p class="color-3 px-10">x</p>
-                        <p class="color-white">=</p>
-                        <p class="color-5 px-10">42.</p>
+                    <code class="px-20">
+                        <span class="color-1">var</span>
+                        <span class="color-3 px-10">x</span>
+                        <span class="color-white">=</span>
+                        <span class="color-5 px-10">42.</span>
                     </code>
                 </div>
 
@@ -204,10 +211,10 @@
                 <p>By simply assigning it a value. For example,</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-3 px-10">x</p>
-                        <p class="color-white">=</p>
-                        <p class="color-5 px-10">42.</p>
+                    <code class="px-20">
+                        <span class="color-3 px-10">x</span>
+                        <span class="color-white">=</span>
+                        <span class="color-5 px-10">42.</span>
                     </code>
                 </div>
 
@@ -216,11 +223,11 @@
                 <p>With the keyword let. For example,</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-1">let</p>
-                        <p class="color-3 px-10">x</p>
-                        <p class="color-white">=</p>
-                        <p class="color-5 px-10">13.</p>
+                    <code class="px-20">
+                        <span class="color-1">let</span>
+                        <span class="color-3 px-10">x</span>
+                        <span class="color-white">=</span>
+                        <span class="color-5 px-10">13.</span>
                     </code>
                 </div>
 
@@ -244,53 +251,67 @@
                     which x is declared, not the block, which in this case is an if statement.</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                            <p class="color-6 pr-10">if</p>
-                            <p class="color-white">(</p>
-                            <p class="color-1 px-5">true</p>
-                            <p class="color-white">)</p>
-                            <p class="color-white px-10">{</p>
-                            <p class="color-1">var</p>
-                            <p class="color-3 px-10">x</p>
-                            <p class="color-white pr-10">=</p>
-                            <p class="color-7">5</p>
-                            <p class="color-white">;</p>
-                            <p class="color-white px-10">}</p>
-                            <p class="color-3">console</p>
-                            <p class="color-2">.log</p>
-                            <p class="color-white">(</p>
-                            <p class="color-3">x</p>
-                            <p class="color-white">)</p>
-                            <p class="color-white pr-10">;</p>
-                            <p class="color-5">// 5</p>
-                        </code>
+                    <code>
+                        <div class="px-20">
+                            <span class="color-6">if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-1">true</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-1">var</span>
+                            <span class="color-3">x</span>
+                            <span class="color-white">=</span>
+                            <span class="color-7">5</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">console</span>
+                            <span class="color-2">.log</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">x</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">;</span>
+                            <span class="color-5">// 5</span>
+                        </div>
+                    </code>
                 </div>
 
                 <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-6 pr-10">if</p>
-                        <p class="color-white">(</p>
-                        <p class="color-1 px-5">true</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-1">let</p>
-                        <p class="color-3 px-10">x</p>
-                        <p class="color-white pr-10">=</p>
-                        <p class="color-7">5</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
-                        <p class="color-3">console</p>
-                        <p class="color-2">.log</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">y</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white pr-10">;</p>
-                        <p class="color-5">// referenceError: y is not</p>
-                    </code>
                     <code>
-                        <p class="color-3 px-20">defined</p>
+                        <div class="px-20">
+                            <span class="color-6">if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-1">true</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-1">let</span>
+                            <span class="color-3">x</span>
+                            <span class="color-white">=</span>
+                            <span class="color-7">5</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">console</span>
+                            <span class="color-2">.log</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">y</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">;</span>
+                            <span class="color-5">// referenceError: y is not</span>
+                            <span class="color-5">defined</span>
+                        </div>
                     </code>
                 </div>
 
@@ -323,12 +344,12 @@
                     dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                            <p class="color-1">const</p>
-                            <p class="color-3 px-10">PI</p>
-                            <p class="color-white">=</p>
-                            <p class="color-7 pl-10">3.14</p>
-                            <p class="color-white">;</p>
+                    <code class="px-20">
+                            <span class="color-1">const</span>
+                            <span class="color-3 px-10">PI</span>
+                            <span class="color-white">=</span>
+                            <span class="color-7 pl-10">3.14</span>
+                            <span class="color-white">;</span>
                         </code>
 
                 </div>
@@ -341,24 +362,8 @@
                     example:</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-5">// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL</p>
-                    </code>
-                    <code class="flex flex-row px-20">
-                        <p class="color-3">CAUSE AN ERROR ANLSO</p>
-                        <p class="color-1 px-10">function</p>
-                        <p class="color-2">f</p>
-                        <p class="color-white">()</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-1">const g</p>
-                        <p class="color-white px-10">=</p>
-                        <p class="color-7">5</p>
-                        <p class="color-white">;</p>
-                        <p class="color-1 px-10">var</p>
-                        <p class="color-3">g</p>
-                        <p class="color-white">;</p>
-                        <p class="color-5 px-10">//statments</p>
-                        <p class="color-white">}</p>
+                    <code class="px-20">
+                        <span class="color-5">// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL CAUSE AN ERROR ANLSO function f () { const g = 5 ; var g ; //statments }</span>
                     </code>
                 </div>
 
@@ -366,21 +371,26 @@
                     problems.</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-1">const</p>
-                        <p class="color-3 px-10">MY_OBJECT</p>
-                        <p class="color-white pr-10">=</p>
-                        <p class="color-white">{</p>
-                        <p class="color-4">"key"</p>
-                        <p class="color-white pr-10">:</p>
-                        <p class="color-4">"value"</p>
-                        <p class="color-white">};</p>
-                        <p class="color-3 pl-10">MY_OBJECT</p>
-                        <p class="color-white">.</p>
-                        <p class="color-8">key</p>
-                        <p class="color-white pr-10">=</p>
-                        <p class="color-4">"otherValue"</p>
-                        <p class="color-white">;</p>
+                    <code>
+                        <div class="px-20">
+                            <span class="color-1">const</span>
+                            <span class="color-3">MY_OBJECT</span>
+                            <span class="color-white">=</span>
+                            <span class="color-white">{</span>
+                            <span class="color-3">"key"</span>
+                            <span class="color-white">:</span>
+                            <span class="color-4">"value"</span>
+                            <span class="color-white">};</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">MY_OBJECT</span>
+                            <span class="color-white">.</span>
+                            <span class="color-8">key</span>
+                            <span class="color-white">=</span>
+                            <span class="color-4">"otherValue"</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        
                     </code>
 
                 </div>
@@ -426,20 +436,30 @@
                 <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else
                     clause to execute a statement if the condition is false. An if statement looks as follows:</p>
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-6 pr-10">if</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">condition</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">statement_1</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
-                        <p class="color-6">else</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">statement_2</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
+                    <code >
+                        <div class="px-20">
+                            <span class="color-6">if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">condition</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statement_1</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                            <span class="color-6">else</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statement_2</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                        </div>                                       
                     </code>
                 </div>
 
@@ -451,40 +471,55 @@
                     follows:</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-6 pr-10">if</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">condition_1</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">statement_1</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
-                        <p class="color-6 pr-10">else if</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">condition_2</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">statement_2</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
-                    </code>
-
-                    <code class="flex flex-row px-20">
-                        <p class="color-6 pr-10">else if</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">condition_n</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">statement_n</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
-                        <p class="color-6">else</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">statement_last</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
-                    </code>
+                    <code>
+                        <div class="px-20">
+                            <span class="color-6">if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">condition_1</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statement_1</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white ">}</span>
+                            <span class="color-6">else if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">condition_2</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white ">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statement_2</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white ">}</span>
+                            <span class="color-6">else if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">condition_n</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statement_n</span>
+                            <span class="color-white">;</span>
+                        </div> 
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                            <span class="color-6">else</span>
+                            <span class="color-white">{</span>
+                        </div>  
+                        <div class="px-20">
+                            <span class="color-3">statement_last</span>
+                            <span class="color-white">;</span>
+                        </div> 
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                        </div>               
+                    </code> 
                 </div>
 
                 <p>In the case of multiple conditions only the first logical condition which evaluates to true will be
@@ -493,27 +528,40 @@
                 </p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-6 pr-10">if</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">condition</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">statement_1_runs_if_condition_is_true</p>
-                        <p class="color-white">;</p>
-                        <p class="color-3 pl-10">statement_2_runs_if_condition_is_true</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
-                    </code>
-
-                    <code class="flex flex-row px-20">
-                        <p class="color-6">else</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">statemente_3_if_condition_is_false</p>
-                        <p class="color-white">;</p>
-                        <p class="color-3 pl-10">statemente_4_if_condition_is_false</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
+                    <code>
+                        <div class="px-20">
+                            <span class="color-6">if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">condition</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statement_1_runs_if_condition_is_true</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statement_2_runs_if_condition_is_true</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                            <span class="color-6">else</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statemente_3_if_condition_is_false</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-3">statemente_4_if_condition_is_false</span>
+                            <span class="color-white">;</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                        </div>
+                        
+                        
                     </code>
 
                 </div>
@@ -523,16 +571,22 @@
                 </p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-6 pr-10">if</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">x</p>
-                        <p class="color-white px-10">=</p>
-                        <p class="color-3">y</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-5">/* statements here */</p>
-                        <p class="color-white px-10">}</p>
+                    <code>
+                        <div class="px-20">
+                            <span class="color-6">if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">x</span>
+                            <span class="color-white">=</span>
+                            <span class="color-3">y</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-5">/* statements here */</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                        </div>
                     </code>
                 </div>
 
@@ -540,18 +594,24 @@
                     parentheses around the assignment. For example:</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-6 pr-10">if</p>
-                        <p class="color-white">(</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">x</p>
-                        <p class="color-white px-10">=</p>
-                        <p class="color-3">y</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-5">/* statements here */</p>
-                        <p class="color-white px-10">}</p>
+                    <code>
+                        <div class="px-20">
+                            <span class="color-6">if</span>
+                            <span class="color-white">(</span>
+                            <span class="color-white">(</span>
+                            <span class="color-3">x</span>
+                            <span class="color-white">=</span>
+                            <span class="color-3">y</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">)</span>
+                            <span class="color-white">{</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-5">/* statements here */</span>
+                        </div>
+                        <div class="px-20">
+                            <span class="color-white">}</span>
+                        </div>
                     </code>
                 </div>
 
@@ -568,12 +628,12 @@
                     statement looks as follows:</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-6 pr-10">while</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">condition</p>
-                        <p class="color-white">)</p>
-                        <p class="color-3 pl-10">statement</p>
+                    <code class="px-20">
+                        <span class="color-6 pr-10">while</span>
+                        <span class="color-white">(</span>
+                        <span class="color-3">condition</span>
+                        <span class="color-white">)</span>
+                        <span class="color-3 pl-10">statement</span>
                     </code>
                 </div>
 
@@ -587,31 +647,43 @@
                 <p>The following while loop iterates as long as n is less than three:</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-1 pr-10">var</p>
-                        <p class="color-3 ">n</p>
-                        <p class="color-white px-10">=</p>
-                        <p class="color-7">0</p>
-                        <p class="color-white">;</p>
-                        <p class="color-1 px-10">var</p>
-                        <p class="color-3">x</p>
-                        <p class="color-white px-10">=</p>
-                        <p class="color-7">0</p>
-                        <p class="color-white">;</p>
-                        <p class="color-6 px-10">while</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">n</p>
-                        <p class="color-white px-10"><</p>
-                        <p class="color-7">3</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-3">n</p>
-                        <p class="color-white">==;</p>
-                        <p class="color-3 px-10">x</p>
-                        <p class="color-white">+=</p>
-                        <p class="color-3 pl-10">n</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
+                    <code >
+                        <div class="px-20">
+                            <Span class="color-1">var</Span>
+                            <Span class="color-3 ">n</Span>
+                            <Span class="color-white">=</Span>
+                            <Span class="color-7">0</Span>
+                            <Span class="color-white">;</Span>
+                        </div>
+                        <div class="px-20">
+                            <Span class="color-1">var</Span>
+                            <Span class="color-3">x</Span>
+                            <Span class="color-white">=</Span>
+                            <Span class="color-7">0</Span>
+                            <Span class="color-white">;</Span>
+                        </div>
+                        <div class="px-20">
+                            <Span class="color-6">while</Span>
+                            <Span class="color-white">(</Span>
+                            <Span class="color-3">n</Span>
+                            <Span class="color-white0"><</Span>
+                            <Span class="color-7">3</Span>
+                            <Span class="color-white">)</Span>
+                            <Span class="color-white">{</Span>
+                        </div>
+                       <div class="px-20">
+                            <Span class="color-3">n</Span>
+                            <Span class="color-white">==;</Span>
+                       </div>
+                       <div class="px-20">
+                            <Span class="color-3">x</Span>
+                            <Span class="color-white">+=</Span>
+                            <Span class="color-3">n</Span>
+                            <Span class="color-white">;</Span>
+                       </div>
+                        <div class="px-20">
+                            <Span class="color-white">}</Span>
+                        </div>
                     </code>
                 </div>
 
@@ -649,19 +721,25 @@
                 <p>For example, the following code defines a simple function named square:</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                        <p class="color-1 pr-10">function</p>
-                        <p class="color-2">square</p>
-                        <p class="color-white">(</p>
-                        <p class="color-3">number</p>
-                        <p class="color-white">)</p>
-                        <p class="color-white px-10">{</p>
-                        <p class="color-6 pr-10">return</p>
-                        <p class="color-3">number</p>
-                        <p class="color-white px-10">*</p>
-                        <p class="color-3">number</p>
-                        <p class="color-white">;</p>
-                        <p class="color-white px-10">}</p>
+                    <code>
+                        <div class="px-20">
+                            <Span class="color-1">function</Span>
+                            <Span class="color-2">square</Span>
+                            <Span class="color-white">(</Span>
+                            <Span class="color-3">number</Span>
+                            <Span class="color-white">)</Span>
+                            <Span class="color-white">{</Span>
+                        </div>
+                        <div class="px-20">
+                            <Span class="color-6">return</Span>
+                            <Span class="color-3">number</Span>
+                            <Span class="color-white">*</Span>
+                            <Span class="color-3">number</Span>
+                            <Span class="color-white">;</Span>
+                        </div>
+                        <div class="px-20">
+                            <Span class="color-white">}</Span>
+                        </div>
                     </code>
                 </div>
 
@@ -670,12 +748,12 @@
                     statement specifies the value returned by the function.</p>
 
                 <div class="box-code">
-                    <code class="flex flex-row px-20">
-                            <p class="color-6 pr-10">return</p>
-                            <p class="color-3">number</p>
-                            <p class="color-white px-10">*</p>
-                            <p class="color-3">number</p>
-                            <p class="color-white">;</p>
+                    <code class="px-20">
+                            <span class="color-6 pr-10">return</span>
+                            <span class="color-3">number</span>
+                            <span class="color-white px-10">*</span>
+                            <span class="color-3">number</span>
+                            <span class="color-white">;</span>
                         </code>
                 </div>
 
