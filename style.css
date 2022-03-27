@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    border-color: #66d9ef;
+}
+
 p {
     margin-bottom: 10px;
 }
@@ -190,5 +194,11 @@ li {
 
     .container {
         max-width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .header {
+        display: none;
     }
 }
